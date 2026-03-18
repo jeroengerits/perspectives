@@ -109,6 +109,41 @@ Do not use this method for:
     └── SKILL.md
 ```
 
+## Install And Use In Codex
+
+Install a skill from this repository with `npx skills add`:
+
+```bash
+npx skills add https://github.com/jeroengerits/perspectives --skill perspective
+```
+
+Install any specialist role the same way:
+
+```bash
+npx skills add https://github.com/jeroengerits/perspectives --skill facilitator
+npx skills add https://github.com/jeroengerits/perspectives --skill facts
+npx skills add https://github.com/jeroengerits/perspectives --skill feelings
+npx skills add https://github.com/jeroengerits/perspectives --skill benefits
+npx skills add https://github.com/jeroengerits/perspectives --skill risks
+npx skills add https://github.com/jeroengerits/perspectives --skill ideas
+```
+
+After installing or updating a skill, restart Codex so it reloads the local skill set.
+
+Use the organizer directly in a prompt:
+
+```text
+Use jeroengerits-perspective to help me decide whether to launch this feature now or delay it by one sprint.
+```
+
+Use a specialist directly when only one lens is needed:
+
+```text
+Use jeroengerits-risks to pressure-test this rollout plan.
+Use jeroengerits-benefits to evaluate the upside of this proposal.
+Use jeroengerits-facts to separate facts, assumptions, and unknowns in this decision.
+```
+
 ## Example Use
 
 Example prompt for the organizer:
