@@ -2,17 +2,17 @@
 
 Structured decision skills for Codex.
 
-`perspectives` is a small skill set for decisions that are too ambiguous, high-stakes, or contentious for a single blended answer. It keeps multiple lenses separate until synthesis, then turns them into one practical recommendation.
+`perspectives` is a small skill set for decisions that are ambiguous, high-stakes, or contentious enough that a single blended answer is not useful. It keeps multiple lenses separate first, then turns them into one practical recommendation.
 
-The repository contains one organizer skill, `perspective`, plus six supporting skills that analyze the same brief from different angles.
+The repository contains one organizer skill, `perspective`, and six supporting skills that analyze the same brief from different angles.
 
-## Included Skills
+## Skills
 
-- `perspective`: runs the full workflow and writes the final memo
-- `facilitator`: frames the decision and structures synthesis
+- `perspective`: orchestrates the full workflow and writes the final recommendation
+- `facilitator`: frames the decision and structures the synthesis
 - `facts`: separates verified information, assumptions, and unknowns
 - `feelings`: surfaces instinctive reactions and stakeholder sentiment
-- `benefits`: argues the upside and value
+- `benefits`: argues the upside and potential value
 - `risks`: pressure-tests downside and failure modes
 - `ideas`: expands the option space with alternatives and mitigations
 
@@ -20,18 +20,15 @@ The repository contains one organizer skill, `perspective`, plus six supporting 
 
 When you use `perspective`, it:
 
-1. Normalizes the request into a decision brief.
-2. Generates one internal clarifying question if the brief is incomplete.
-3. Sends the clarifying question, when needed, to all six supporting skills.
-4. Synthesizes an `Auto Answer` with assumptions labeled.
-5. Dispatches the same normalized brief to all six supporting skills.
-6. Preserves useful disagreement during synthesis.
-7. Produces a decision memo with recommendation and next steps.
-8. Appends the run to [`logs/perspective-runs.md`](logs/perspective-runs.md).
+1. Normalizes the prompt into a decision brief.
+2. Produces one clarifying question if the brief is incomplete.
+3. Shares the same clarified brief with all six supporting skills.
+4. Preserves disagreement where it is informative.
+5. Synthesizes the outputs into one recommendation with explicit assumptions and next steps.
 
-`perspective` always depends on all six supporting skills. It does not skip views.
+`perspective` always depends on all six supporting skills.
 
-## Output Shape
+## Output
 
 The default memo includes:
 
@@ -47,7 +44,7 @@ The default memo includes:
 
 ## When To Use It
 
-Good fit:
+Use it for:
 
 - choosing between real options
 - evaluating proposals with meaningful tradeoffs
@@ -55,7 +52,7 @@ Good fit:
 - clarifying an ambiguous strategic problem
 - generating alternatives before committing
 
-Poor fit:
+Do not use it for:
 
 - simple factual lookup
 - straightforward execution work
@@ -70,7 +67,14 @@ Install the organizer skill:
 npx skills add https://github.com/jeroengerits/perspectives --skill perspective
 ```
 
-Install a supporting skill the same way by replacing `perspective` with `facilitator`, `facts`, `feelings`, `benefits`, `risks`, or `ideas`.
+Install a supporting skill the same way by replacing `perspective` with one of:
+
+- `facilitator`
+- `facts`
+- `feelings`
+- `benefits`
+- `risks`
+- `ideas`
 
 Restart Codex after installing or updating a skill so the local skill set is reloaded.
 
@@ -103,8 +107,6 @@ Use facts to separate facts, assumptions, and unknowns in this decision.
 ├── facts/
 ├── feelings/
 ├── ideas/
-├── logs/
-│   └── perspective-runs.md
 ├── perspective/
 ├── risks/
 └── README.md
@@ -113,5 +115,4 @@ Use facts to separate facts, assumptions, and unknowns in this decision.
 ## Notes
 
 - Skill definitions live in each `SKILL.md`.
-- [`logs/perspective-runs.md`](logs/perspective-runs.md) is the append-only template and history file used by `perspective`.
 - The method is intentionally opinionated: separate views first, synthesize second, and label assumptions explicitly.
