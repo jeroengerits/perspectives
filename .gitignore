@@ -7,15 +7,4 @@ Thumbs.db
 *.swo
 *~
 
-.env
-.env.*
-!.env.example
-
-node_modules/
-vendor/
-
-dist/
-build/
-coverage/
-
 *.log

@@ -1,6 +1,6 @@
 # Perspective Run Log
 
-Append one section per run using this template.
+Append one section per run. Keep the newest entry at the end of the file.
 
 ## Run Template
 
@@ -11,7 +11,7 @@ Append one section per run using this template.
 ...
 
 ### Generated Question
-`None` or the generated random clarifying question.
+`None` or the generated clarifying question.
 
 ### Question Analysis: Facilitator
 ...
