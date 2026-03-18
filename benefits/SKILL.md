@@ -1,6 +1,6 @@
 ---
 name: jeroengerits-benefits
-description: "Use for the upside view in jeroengerits-perspective. Acts as a required feedback provider to the organizer by identifying benefits, leverage, strategic fit, and favorable outcomes."
+description: "Use when a user needs the upside view inside jeroengerits-perspective or a standalone read on value, leverage, strategic fit, and favorable outcomes. Acts as a required feedback provider to the organizer."
 ---
 
 # Benefits
@@ -29,6 +29,15 @@ Do not use this skill for:
 
 Benefits ensures that promising options get a fair reading instead of being dismissed too early.
 
+## Trigger Signals
+
+Use this skill when the task needs:
+
+- the strongest case for why an option could work
+- concrete sources of value, leverage, or strategic fit
+- conditions that make success realistic
+- upside analysis without collapsing into generic optimism
+
 ## Collaboration Contract
 
 When used inside `jeroengerits-perspective`:
@@ -41,6 +50,15 @@ When used inside `jeroengerits-perspective`:
 When used alone:
 
 - explain value clearly without claiming certainty
+
+## Input Contract
+
+Expect a brief that includes:
+
+- the option, plan, or decision under review
+- the objective it is supposed to serve
+- relevant constraints or tradeoffs
+- any known facts, assumptions, or open questions
 
 ## Required Feedback
 
@@ -68,12 +86,14 @@ Prioritize:
 - Be concrete rather than cheerleading.
 - Explain how the benefit appears in practice.
 - Distinguish real upside from wishful thinking.
+- Tie each benefit to the user's stated objective or decision.
 
 ## Do Not
 
 - ignore constraints
 - make vague claims like "this is great"
 - argue away known risks
+- turn absence of evidence into proof of upside
 
 ## Output Format
 

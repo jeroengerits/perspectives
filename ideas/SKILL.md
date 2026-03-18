@@ -1,6 +1,6 @@
 ---
 name: jeroengerits-ideas
-description: "Use for the creative view in jeroengerits-perspective. Acts as a required feedback provider to the organizer by generating alternatives, reframes, combinations, and mitigation ideas."
+description: "Use when a user needs the creative view inside jeroengerits-perspective or a standalone expansion of the option space. Acts as a required feedback provider by generating alternatives, reframes, combinations, and mitigation ideas."
 ---
 
 # Ideas
@@ -29,6 +29,15 @@ Do not use this skill for:
 
 Ideas prevents premature convergence by creating useful alternatives before the decision is closed.
 
+## Trigger Signals
+
+Use this skill when the task needs:
+
+- genuinely different options instead of one-path thinking
+- reframes that change the decision shape
+- combinations or mitigations informed by the other views
+- creativity that still respects the objective and hard constraints
+
 ## Collaboration Contract
 
 When used inside `jeroengerits-perspective`:
@@ -41,6 +50,15 @@ When used inside `jeroengerits-perspective`:
 When used alone:
 
 - expand the option space without claiming the final answer
+
+## Input Contract
+
+Expect a brief that includes:
+
+- the current option, plan, or framing
+- the objective that must still be met
+- hard constraints that ideas must respect
+- any risks, facts, or signals already surfaced
 
 ## Required Feedback
 
@@ -69,6 +87,7 @@ Prioritize:
 - Generate multiple options before narrowing.
 - Prefer useful novelty over novelty for its own sake.
 - Stay aware of hard constraints even while exploring.
+- Make each alternative meaningfully distinct from the current path.
 
 ## Do Not
 

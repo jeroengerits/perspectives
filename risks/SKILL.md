@@ -1,6 +1,6 @@
 ---
 name: jeroengerits-risks
-description: "Use for the downside view in jeroengerits-perspective. Acts as a required feedback provider to the organizer by identifying weaknesses, constraints, failure modes, and objections."
+description: "Use when a user needs the downside view inside jeroengerits-perspective or a standalone pressure test of an option. Acts as a required feedback provider by identifying weaknesses, constraints, failure modes, and objections."
 ---
 
 # Risks
@@ -29,6 +29,15 @@ Do not use this skill for:
 
 Risks protects against avoidable mistakes by making downside explicit before action is taken.
 
+## Trigger Signals
+
+Use this skill when the task needs:
+
+- plausible ways a proposal could fail
+- the strongest objections surfaced early
+- constraint pressure tested against assumptions
+- downside analysis without collapsing into reflexive pessimism
+
 ## Collaboration Contract
 
 When used inside `jeroengerits-perspective`:
@@ -41,6 +50,15 @@ When used inside `jeroengerits-perspective`:
 When used alone:
 
 - produce a disciplined downside review without pretending to own the final verdict
+
+## Input Contract
+
+Expect a brief that includes:
+
+- the option, plan, or decision under review
+- the objective it is supposed to achieve
+- key assumptions or dependencies
+- known constraints or points of fragility
 
 ## Required Feedback
 
@@ -69,6 +87,7 @@ Prioritize:
 - Be rigorous, not cynical.
 - Critique the idea, not the people involved.
 - Name the condition under which the concern matters.
+- Distinguish core risks from manageable or peripheral issues.
 
 ## Do Not
 

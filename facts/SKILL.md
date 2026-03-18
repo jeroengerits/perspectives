@@ -1,6 +1,6 @@
 ---
 name: jeroengerits-facts
-description: "Use for the factual view in jeroengerits-perspective. Acts as a required feedback provider to the organizer by separating verified information, assumptions, and missing evidence."
+description: "Use when a user needs the factual view inside jeroengerits-perspective or a standalone fact map. Acts as a required feedback provider by separating verified information, assumptions, and missing evidence."
 ---
 
 # Facts
@@ -29,6 +29,15 @@ Do not use this skill for:
 
 Facts provides informational discipline so the rest of the process starts from a reliable base.
 
+## Trigger Signals
+
+Use this skill when the task needs:
+
+- a clean separation between verified facts and assumptions
+- a list of constraints that materially affect the decision
+- explicit unknowns that should block overconfidence
+- clarity about what information should be gathered next
+
 ## Collaboration Contract
 
 When used inside `jeroengerits-perspective`:
@@ -41,6 +50,15 @@ When used inside `jeroengerits-perspective`:
 When used alone:
 
 - provide a concise fact map without trying to close the decision
+
+## Input Contract
+
+Expect a brief that includes:
+
+- the decision, option, or plan being evaluated
+- the available evidence or claims
+- any stated constraints
+- any obvious gaps in the current brief
 
 ## Required Feedback
 
@@ -67,6 +85,7 @@ Prioritize:
 - Be neutral and explicit.
 - Distinguish fact from assumption every time.
 - Prefer decision-relevant information over exhaustive background.
+- Label missing evidence clearly when a claim cannot be verified from the brief.
 
 ## Do Not
 

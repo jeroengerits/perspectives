@@ -1,6 +1,6 @@
 ---
 name: jeroengerits-perspective
-description: "Use when a user needs a structured decision exercise with multiple views on the same problem. Acts as an organizer that always gathers feedback from jeroengerits-facilitator, jeroengerits-facts, jeroengerits-feelings, jeroengerits-benefits, jeroengerits-risks, and jeroengerits-ideas before producing one practical recommendation."
+description: "Use when a user needs a structured decision exercise, tradeoff analysis, or problem-framing pass with multiple views on the same problem. Acts as an organizer that always gathers feedback from jeroengerits-facilitator, jeroengerits-facts, jeroengerits-feelings, jeroengerits-benefits, jeroengerits-risks, and jeroengerits-ideas before producing one practical recommendation."
 ---
 
 # Perspective
@@ -28,6 +28,15 @@ Do not use this skill for:
 - simple execution tasks with no real tradeoff
 - situations where the user wants immediate implementation instead of analysis
 
+## Trigger Signals
+
+Use this skill when the user needs:
+
+- a decision memo across competing viewpoints
+- structured thinking before committing to a direction
+- balanced treatment of upside, downside, evidence, sentiment, and alternatives
+- help clarifying a messy decision before action
+
 ## Core Rule
 
 Keep the views separate. Do not blend them into one generic analysis voice.
@@ -46,6 +55,20 @@ Each supporting skill has one clear job:
 `jeroengerits-perspective` must always depend on all six supporting skills for feedback.
 
 It must not skip a skill because a view seems obvious. It must not replace a role skill with its own inline opinion before collecting feedback.
+
+## Input Contract
+
+Build or request a brief with these fields:
+
+- `Objective`
+- `Decision`
+- `Scope`
+- `Constraints`
+- `Known Facts`
+- `Open Questions`
+- `Desired Output`
+
+If one or more fields are missing but the task is still clear enough to proceed, fill them in conservatively and label the assumptions. If the decision itself is unclear, ask one concise clarifying question.
 
 ## Workflow
 
@@ -69,6 +92,15 @@ It must not skip a skill because a view seems obvious. It must not replace a rol
 7. Use `jeroengerits-facilitator` output to structure the synthesis, but keep all other views visible where they materially disagree.
 8. Produce the default decision memo.
 
+## Dispatch Rule
+
+When dispatching the brief:
+
+- send the same decision brief to every supporting skill
+- require each skill to stay in role and use its own output format
+- do not let one skill answer another skill's job
+- treat missing or weak support-skill output as a reason to restate the brief, not as permission to skip the role
+
 ## Execution
 
 Always dispatch `jeroengerits-facilitator`, `jeroengerits-facts`, `jeroengerits-feelings`, `jeroengerits-benefits`, `jeroengerits-risks`, and `jeroengerits-ideas` with the same brief.
@@ -83,6 +115,13 @@ After all feedback is collected:
 - use `jeroengerits-benefits` for upside
 - use `jeroengerits-risks` for downside
 - use `jeroengerits-ideas` for alternatives and mitigations
+
+## Synthesis Rules
+
+- Keep disagreement visible when it affects the recommendation.
+- Explicitly mark where the recommendation depends on assumptions or missing evidence.
+- Prefer a practical recommendation over a false sense of certainty.
+- If the best answer is "delay, gather information, or run a smaller test," say that directly.
 
 ## Default Output Format
 

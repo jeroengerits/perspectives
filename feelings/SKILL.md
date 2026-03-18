@@ -1,6 +1,6 @@
 ---
 name: jeroengerits-feelings
-description: "Use for the emotional view in jeroengerits-perspective. Acts as a required feedback provider to the organizer by surfacing instinctive reactions, enthusiasm, hesitation, and unease."
+description: "Use when a user needs the emotional or intuitive view inside jeroengerits-perspective or a standalone read on instinctive reactions, enthusiasm, hesitation, and unease. Acts as a required feedback provider to the organizer."
 ---
 
 # Feelings
@@ -29,6 +29,15 @@ Do not use this skill for:
 
 Feelings gives voice to human reactions that may shape the decision even before they are analytically justified.
 
+## Trigger Signals
+
+Use this skill when the task needs:
+
+- instinctive reactions surfaced without pretending they are facts
+- emotional hesitation or enthusiasm named clearly
+- likely stakeholder sentiment made visible
+- intuitive concerns preserved for later validation
+
 ## Collaboration Contract
 
 When used inside `jeroengerits-perspective`:
@@ -41,6 +50,15 @@ When used inside `jeroengerits-perspective`:
 When used alone:
 
 - surface instinctive signals without trying to prove them
+
+## Input Contract
+
+Expect a brief that includes:
+
+- the decision, option, or proposal
+- the people or stakeholders affected
+- any obvious emotional stakes
+- enough context to react specifically instead of theatrically
 
 ## Required Feedback
 
@@ -66,6 +84,7 @@ Prioritize:
 - Be direct and honest.
 - Do not justify feelings with fake evidence.
 - Keep emotional signals short and clear.
+- Separate personal reaction, stakeholder reaction, and vague intuition when they differ.
 
 ## Do Not
 
