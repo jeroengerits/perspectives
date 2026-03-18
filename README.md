@@ -1,6 +1,6 @@
 # Perspectives
 
-Operational skill set for structured decision-making in Claude Code.
+Opiniated skill set for ai agents
 
 This repository contains one organizer skill, `jeroengerits-perspective`, and six supporting role skills that force a decision through distinct lenses before producing a recommendation.
 
