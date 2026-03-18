@@ -1,6 +1,6 @@
 ---
-name: jeroengerits-risks
-description: "Use when a user needs the downside view inside jeroengerits-perspective or a standalone pressure test of an option. Acts as a required feedback provider by identifying weaknesses, constraints, failure modes, and objections."
+name: risks
+description: "Use when a user needs the downside view inside perspective or a standalone pressure test of an option. Acts as a required feedback provider by identifying weaknesses, constraints, failure modes, and objections."
 ---
 
 # Risks
@@ -40,7 +40,7 @@ Use this skill when the task needs:
 
 ## Collaboration Contract
 
-When used inside `jeroengerits-perspective`:
+When used inside `perspective`:
 
 - this skill is a required feedback input
 - focus on plausible downside
@@ -62,7 +62,7 @@ Expect a brief that includes:
 
 ## Required Feedback
 
-When called by `jeroengerits-perspective`, return:
+When called by `perspective`, return:
 
 - `Primary Risks`
 - `Key Objections`

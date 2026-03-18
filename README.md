@@ -2,21 +2,21 @@
 
 Opinionated multi-view decision skills for Codex.
 
-This repository contains one organizer skill, `jeroengerits-perspective`, and six supporting skills that analyze the same decision from different angles before producing a recommendation.
+This repository contains one organizer skill, `perspective`, and six supporting skills that analyze the same decision from different angles before producing a recommendation.
 
 ## Roles
 
-- `jeroengerits-perspective`: organizer and final synthesis
-- `jeroengerits-facilitator`: frame the decision and structure the synthesis
-- `jeroengerits-facts`: separate facts, assumptions, and unknowns
-- `jeroengerits-feelings`: surface instinctive reactions and stakeholder sentiment
-- `jeroengerits-benefits`: argue the upside and value
-- `jeroengerits-risks`: pressure-test downside and failure modes
-- `jeroengerits-ideas`: generate alternatives, hybrids, and mitigations
+- `perspective`: organizer and final synthesis
+- `facilitator`: frame the decision and structure the synthesis
+- `facts`: separate facts, assumptions, and unknowns
+- `feelings`: surface instinctive reactions and stakeholder sentiment
+- `benefits`: argue the upside and value
+- `risks`: pressure-test downside and failure modes
+- `ideas`: generate alternatives, hybrids, and mitigations
 
 ## How It Works
 
-Use `jeroengerits-perspective` when you want structured thinking instead of a single blended answer.
+Use `perspective` when you want structured thinking instead of a single blended answer.
 
 The organizer:
 
@@ -59,13 +59,13 @@ After installing or updating a skill, restart Codex so it reloads the local skil
 Basic organizer prompt:
 
 ```text
-Use jeroengerits-perspective to help me decide whether to launch this feature now or delay it by one sprint. The objective is to improve activation without destabilizing onboarding. Current constraints: 2 engineers, limited analytics confidence, and a fixed release window.
+Use perspective to help me decide whether to launch this feature now or delay it by one sprint. The objective is to improve activation without destabilizing onboarding. Current constraints: 2 engineers, limited analytics confidence, and a fixed release window.
 ```
 
 Auto-question and logging prompt:
 
 ```text
-Use jeroengerits-perspective to analyze this request. If the brief is unclear, generate exactly one random clarifying question internally. Have that question analyzed by all six skills: jeroengerits-facilitator, jeroengerits-facts, jeroengerits-feelings, jeroengerits-benefits, jeroengerits-risks, and jeroengerits-ideas. Synthesize those six outputs into an Auto Answer with assumptions clearly labeled. Then run the full normalized brief through the same six skills, produce the final decision memo, and append the full run to logs/perspective-runs.md.
+Use perspective to analyze this request. If the brief is unclear, generate exactly one random clarifying question internally. Have that question analyzed by all six skills: facilitator, facts, feelings, benefits, risks, and ideas. Synthesize those six outputs into an Auto Answer with assumptions clearly labeled. Then run the full normalized brief through the same six skills, produce the final decision memo, and append the full run to logs/perspective-runs.md.
 
 Request: [replace this with the actual decision or problem]
 ```
@@ -73,7 +73,7 @@ Request: [replace this with the actual decision or problem]
 Use a specialist directly when you only want one lens:
 
 ```text
-Use jeroengerits-risks to pressure-test this rollout plan.
-Use jeroengerits-benefits to evaluate the upside of this proposal.
-Use jeroengerits-facts to separate facts, assumptions, and unknowns in this decision.
+Use risks to pressure-test this rollout plan.
+Use benefits to evaluate the upside of this proposal.
+Use facts to separate facts, assumptions, and unknowns in this decision.
 ```

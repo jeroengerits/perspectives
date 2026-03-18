@@ -1,6 +1,6 @@
 ---
-name: jeroengerits-ideas
-description: "Use when a user needs the creative view inside jeroengerits-perspective or a standalone expansion of the option space. Acts as a required feedback provider by generating alternatives, reframes, combinations, and mitigation ideas."
+name: ideas
+description: "Use when a user needs the creative view inside perspective or a standalone expansion of the option space. Acts as a required feedback provider by generating alternatives, reframes, combinations, and mitigation ideas."
 ---
 
 # Ideas
@@ -40,11 +40,11 @@ Use this skill when the task needs:
 
 ## Collaboration Contract
 
-When used inside `jeroengerits-perspective`:
+When used inside `perspective`:
 
 - this skill is a required feedback input
 - generate multiple useful options before narrowing
-- build on what `jeroengerits-facts`, `jeroengerits-feelings`, `jeroengerits-benefits`, and `jeroengerits-risks` surfaced
+- build on what `facts`, `feelings`, `benefits`, and `risks` surfaced
 - stay aware of hard constraints while exploring
 
 When used alone:
@@ -62,7 +62,7 @@ Expect a brief that includes:
 
 ## Required Feedback
 
-When called by `jeroengerits-perspective`, return:
+When called by `perspective`, return:
 
 - `Alternative Options`
 - `Reframes`

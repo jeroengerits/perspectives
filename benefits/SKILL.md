@@ -1,6 +1,6 @@
 ---
-name: jeroengerits-benefits
-description: "Use when a user needs the upside view inside jeroengerits-perspective or a standalone read on value, leverage, strategic fit, and favorable outcomes. Acts as a required feedback provider to the organizer."
+name: benefits
+description: "Use when a user needs the upside view inside perspective or a standalone read on value, leverage, strategic fit, and favorable outcomes. Acts as a required feedback provider to the organizer."
 ---
 
 # Benefits
@@ -23,7 +23,7 @@ Do not use this skill for:
 - hand-waving away known risks
 - making unsupported claims of success
 - supplying raw facts instead of interpreted upside
-- issuing the final decision on behalf of `jeroengerits-facilitator`
+- issuing the final decision on behalf of `facilitator`
 
 ## Purpose
 
@@ -40,7 +40,7 @@ Use this skill when the task needs:
 
 ## Collaboration Contract
 
-When used inside `jeroengerits-perspective`:
+When used inside `perspective`:
 
 - this skill is a required feedback input
 - focus on practical upside
@@ -62,7 +62,7 @@ Expect a brief that includes:
 
 ## Required Feedback
 
-When called by `jeroengerits-perspective`, return:
+When called by `perspective`, return:
 
 - `Primary Benefits`
 - `Value Creation`

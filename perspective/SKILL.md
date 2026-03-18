@@ -1,6 +1,6 @@
 ---
-name: jeroengerits-perspective
-description: "Use when a user needs a structured decision exercise, tradeoff analysis, or problem-framing pass with multiple views on the same problem. Acts as an organizer that always gathers feedback from jeroengerits-facilitator, jeroengerits-facts, jeroengerits-feelings, jeroengerits-benefits, jeroengerits-risks, and jeroengerits-ideas before producing one practical recommendation."
+name: perspective
+description: "Use when a user needs a structured decision exercise, tradeoff analysis, or problem-framing pass with multiple views on the same problem. Acts as an organizer that always gathers feedback from facilitator, facts, feelings, benefits, risks, and ideas before producing one practical recommendation."
 ---
 
 # Perspective
@@ -43,16 +43,16 @@ Keep the views separate. Do not blend them into one generic analysis voice.
 
 Each supporting skill has one clear job:
 
-- `jeroengerits-facilitator` frames the process and synthesizes
-- `jeroengerits-facts` states what is known, assumed, and missing
-- `jeroengerits-feelings` surfaces instinctive reactions and sentiment
-- `jeroengerits-benefits` explains upside and value
-- `jeroengerits-risks` pressure-tests weaknesses and failure modes
-- `jeroengerits-ideas` expands the option space with alternatives and reframes
+- `facilitator` frames the process and synthesizes
+- `facts` states what is known, assumed, and missing
+- `feelings` surfaces instinctive reactions and sentiment
+- `benefits` explains upside and value
+- `risks` pressure-tests weaknesses and failure modes
+- `ideas` expands the option space with alternatives and reframes
 
 ## Organizer Rule
 
-`jeroengerits-perspective` must always depend on all six supporting skills for feedback.
+`perspective` must always depend on all six supporting skills for feedback.
 
 It must not skip a skill because a view seems obvious. It must not replace a role skill with its own inline opinion before collecting feedback.
 
@@ -79,12 +79,12 @@ When clarification is needed:
 1. Generate exactly one concise random question that would materially improve the brief.
 2. Treat that question as its own mini-brief.
 3. Dispatch that same question-mini-brief to all six supporting skills:
-   - `jeroengerits-facilitator`
-   - `jeroengerits-facts`
-   - `jeroengerits-feelings`
-   - `jeroengerits-benefits`
-   - `jeroengerits-risks`
-   - `jeroengerits-ideas`
+   - `facilitator`
+   - `facts`
+   - `feelings`
+   - `benefits`
+   - `risks`
+   - `ideas`
 4. Collect all six responses before answering the question.
 5. Synthesize one `Auto Answer` that explicitly labels assumptions.
 6. Fold that `Auto Answer` back into the main brief before running the main analysis.
@@ -104,15 +104,15 @@ Do not answer the generated question from the organizer alone. Every generated q
 4. Send that generated question to all six supporting skills and synthesize an `Auto Answer`.
 5. Update the brief with the `Auto Answer` and any labeled assumptions.
 6. Send the same main brief to all six supporting skills:
-   - `jeroengerits-facilitator`
-   - `jeroengerits-facts`
-   - `jeroengerits-feelings`
-   - `jeroengerits-benefits`
-   - `jeroengerits-risks`
-   - `jeroengerits-ideas`
+   - `facilitator`
+   - `facts`
+   - `feelings`
+   - `benefits`
+   - `risks`
+   - `ideas`
 7. Collect all six feedback responses before writing the final answer.
 8. Preserve meaningful disagreement instead of forcing fake consensus.
-9. Use `jeroengerits-facilitator` output to structure the synthesis, but keep all other views visible where they materially disagree.
+9. Use `facilitator` output to structure the synthesis, but keep all other views visible where they materially disagree.
 10. Produce the default decision memo.
 11. Append a full run log to `logs/perspective-runs.md`.
 
@@ -128,7 +128,7 @@ When dispatching the brief:
 
 ## Execution
 
-Always dispatch `jeroengerits-facilitator`, `jeroengerits-facts`, `jeroengerits-feelings`, `jeroengerits-benefits`, `jeroengerits-risks`, and `jeroengerits-ideas` with the same brief.
+Always dispatch `facilitator`, `facts`, `feelings`, `benefits`, `risks`, and `ideas` with the same brief.
 
 Require each supporting skill to return in-role feedback only.
 
@@ -136,12 +136,12 @@ If an auto-generated clarifying question was needed, dispatch those same six ski
 
 After all feedback is collected:
 
-- use `jeroengerits-facilitator` for process framing and synthesis
-- use `jeroengerits-facts` for evidence and unknowns
-- use `jeroengerits-feelings` for instinctive signals
-- use `jeroengerits-benefits` for upside
-- use `jeroengerits-risks` for downside
-- use `jeroengerits-ideas` for alternatives and mitigations
+- use `facilitator` for process framing and synthesis
+- use `facts` for evidence and unknowns
+- use `feelings` for instinctive signals
+- use `benefits` for upside
+- use `risks` for downside
+- use `ideas` for alternatives and mitigations
 
 ## Synthesis Rules
 
@@ -172,9 +172,9 @@ The organizer must prevent these failure modes:
 - mixing multiple views into one section
 - presenting assumptions as facts
 - synthesizing before all six skills respond
-- letting `jeroengerits-risks` kill exploration too early
-- letting `jeroengerits-benefits` become generic optimism
-- letting `jeroengerits-ideas` ignore hard constraints
+- letting `risks` kill exploration too early
+- letting `benefits` become generic optimism
+- letting `ideas` ignore hard constraints
 - hiding unresolved conflict inside a shallow summary
 
 ## Clarification Rule

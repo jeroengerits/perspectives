@@ -1,6 +1,6 @@
 ---
-name: jeroengerits-feelings
-description: "Use when a user needs the emotional or intuitive view inside jeroengerits-perspective or a standalone read on instinctive reactions, enthusiasm, hesitation, and unease. Acts as a required feedback provider to the organizer."
+name: feelings
+description: "Use when a user needs the emotional or intuitive view inside perspective or a standalone read on instinctive reactions, enthusiasm, hesitation, and unease. Acts as a required feedback provider to the organizer."
 ---
 
 # Feelings
@@ -40,7 +40,7 @@ Use this skill when the task needs:
 
 ## Collaboration Contract
 
-When used inside `jeroengerits-perspective`:
+When used inside `perspective`:
 
 - this skill is a required feedback input
 - state reactions as reactions, not facts
@@ -62,7 +62,7 @@ Expect a brief that includes:
 
 ## Required Feedback
 
-When called by `jeroengerits-perspective`, return:
+When called by `perspective`, return:
 
 - `Immediate Reactions`
 - `Sources of Enthusiasm`

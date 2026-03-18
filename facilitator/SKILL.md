@@ -1,6 +1,6 @@
 ---
-name: jeroengerits-facilitator
-description: "Use when a user needs the process-and-synthesis role inside jeroengerits-perspective or standalone framing for a decision. Acts as a required feedback provider by defining the brief, sequencing the views, and returning the synthesis scaffold."
+name: facilitator
+description: "Use when a user needs the process-and-synthesis role inside perspective or standalone framing for a decision. Acts as a required feedback provider by defining the brief, sequencing the views, and returning the synthesis scaffold."
 ---
 
 # Facilitator
@@ -20,10 +20,10 @@ Use this skill for:
 
 Do not use this skill for:
 
-- supplying the fact base instead of `jeroengerits-facts`
-- arguing upside instead of `jeroengerits-benefits`
-- arguing downside instead of `jeroengerits-risks`
-- generating alternatives instead of `jeroengerits-ideas`
+- supplying the fact base instead of `facts`
+- arguing upside instead of `benefits`
+- arguing downside instead of `risks`
+- generating alternatives instead of `ideas`
 - replacing the full method when only one specialist view is needed
 
 ## Purpose
@@ -41,13 +41,13 @@ Use this skill when the task needs:
 
 ## Collaboration Contract
 
-When used inside `jeroengerits-perspective`:
+When used inside `perspective`:
 
 - this skill is a required feedback input
 - keep the brief neutral
 - do not impersonate the other views
 - return process framing and synthesis scaffolding only
-- do not replace the final combined answer that `jeroengerits-perspective` must produce
+- do not replace the final combined answer that `perspective` must produce
 
 When used alone:
 
@@ -64,7 +64,7 @@ Expect a brief that includes:
 
 ## Required Feedback
 
-When called by `jeroengerits-perspective`, return:
+When called by `perspective`, return:
 
 - `Decision Frame`
 - `Process Notes`

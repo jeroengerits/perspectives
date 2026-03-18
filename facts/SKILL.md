@@ -1,6 +1,6 @@
 ---
-name: jeroengerits-facts
-description: "Use when a user needs the factual view inside jeroengerits-perspective or a standalone fact map. Acts as a required feedback provider by separating verified information, assumptions, and missing evidence."
+name: facts
+description: "Use when a user needs the factual view inside perspective or a standalone fact map. Acts as a required feedback provider by separating verified information, assumptions, and missing evidence."
 ---
 
 # Facts
@@ -40,7 +40,7 @@ Use this skill when the task needs:
 
 ## Collaboration Contract
 
-When used inside `jeroengerits-perspective`:
+When used inside `perspective`:
 
 - this skill is a required feedback input
 - return only factual material, assumptions, and unknowns
@@ -62,7 +62,7 @@ Expect a brief that includes:
 
 ## Required Feedback
 
-When called by `jeroengerits-perspective`, return:
+When called by `perspective`, return:
 
 - `Facts`
 - `Assumptions`
