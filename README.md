@@ -152,4 +152,12 @@ Example prompt for the organizer:
 Use jeroengerits-perspective to help me decide whether to launch this feature now or delay it by one sprint. The objective is to improve activation without destabilizing onboarding. Current constraints: 2 engineers, limited analytics confidence, and a fixed release window.
 ```
 
-If the request is too vague, the organizer should ask one concise clarifying question before dispatching the workflow.
+Prompt for the auto-question and logging workflow:
+
+```text
+Use jeroengerits-perspective to analyze this request. If the brief is unclear, generate exactly one random clarifying question internally. Have that question analyzed by all six skills: jeroengerits-facilitator, jeroengerits-facts, jeroengerits-feelings, jeroengerits-benefits, jeroengerits-risks, and jeroengerits-ideas. Synthesize those six outputs into an Auto Answer with assumptions clearly labeled. Then run the full normalized brief through the same six skills, produce the final decision memo, and append the full run to logs/perspective-runs.md.
+
+Request: [replace this with the actual decision or problem]
+```
+
+If the request is too vague, the organizer should generate one concise random clarifying question internally, run that question through all six supporting skills, and use the synthesized auto-answer to continue the workflow.
