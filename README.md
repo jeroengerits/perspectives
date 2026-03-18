@@ -1,158 +1,68 @@
 # Perspectives
 
-Opiniated skill set for ai agents
+Opinionated multi-view decision skills for Codex.
 
-This repository contains one organizer skill, `jeroengerits-perspective`, and six supporting role skills that force a decision through distinct lenses before producing a recommendation.
+This repository contains one organizer skill, `jeroengerits-perspective`, and six supporting skills that analyze the same decision from different angles before producing a recommendation.
 
-## What This Is
+## Roles
 
-Use this repository when a problem benefits from deliberate multi-view analysis instead of a single blended response.
+- `jeroengerits-perspective`: organizer and final synthesis
+- `jeroengerits-facilitator`: frame the decision and structure the synthesis
+- `jeroengerits-facts`: separate facts, assumptions, and unknowns
+- `jeroengerits-feelings`: surface instinctive reactions and stakeholder sentiment
+- `jeroengerits-benefits`: argue the upside and value
+- `jeroengerits-risks`: pressure-test downside and failure modes
+- `jeroengerits-ideas`: generate alternatives, hybrids, and mitigations
 
-The method separates:
+## How It Works
 
-- process and synthesis
-- facts and unknowns
-- feelings and instinctive reactions
-- benefits and upside
-- risks and downside
-- ideas and alternatives
+Use `jeroengerits-perspective` when you want structured thinking instead of a single blended answer.
 
-The goal is simple: make better decisions by preventing one mode of thinking from dominating too early.
+The organizer:
 
-## Primary Entrypoint
-
-Start with `jeroengerits-perspective`.
-
-That organizer skill:
-
-- determines whether the request is actually a good fit for structured decision work
-- rewrites the request into a neutral brief
-- dispatches the same brief to all six supporting skills
-- waits for all six responses
-- synthesizes one practical recommendation while preserving meaningful disagreement
-
-Do not start with the specialist skills unless you explicitly want only one lens.
-
-## Supporting Skills
-
-### `jeroengerits-facilitator`
-
-Frames the decision, defines scope and constraints, preserves tension, and returns synthesis scaffolding.
-
-### `jeroengerits-facts`
-
-Separates verified facts, assumptions, unknowns, and information gaps.
-
-### `jeroengerits-feelings`
-
-Surfaces instinctive reactions, hesitation, enthusiasm, and likely stakeholder sentiment.
-
-### `jeroengerits-benefits`
-
-Builds the strongest concrete case for upside, value creation, leverage, and strategic fit.
-
-### `jeroengerits-risks`
-
-Pressure-tests failure modes, objections, fragility, and constraint pressure.
-
-### `jeroengerits-ideas`
-
-Generates alternatives, reframes, combinations, and mitigations before the decision closes.
-
-## Workflow
-
-The intended flow is:
-
-1. Decide whether the request is a real decision, tradeoff, or framing problem.
-2. Build a neutral brief with objective, decision, scope, constraints, known facts, open questions, and desired output.
-3. Send that same brief to all six supporting skills.
-4. Collect all six responses before synthesizing.
-5. Produce a decision memo with a recommendation and next steps.
-
-The organizer should not skip a role because the answer seems obvious.
+1. rewrites the request into a neutral brief
+2. if needed, generates one internal random clarifying question
+3. sends that question to all six supporting skills
+4. synthesizes an `Auto Answer`
+5. sends the normalized brief to all six supporting skills
+6. produces the final decision memo
+7. appends the run to `logs/perspective-runs.md`
 
 ## When To Use
 
-Use `jeroengerits-perspective` for:
+Good fit:
 
 - choosing between options
-- evaluating proposals with real tradeoffs
-- stress-testing a plan before acting
+- evaluating a proposal with real tradeoffs
+- stress-testing a plan
 - clarifying an ambiguous problem
-- generating alternatives before commitment
+- generating alternatives before committing
 
-## When Not To Use
+Not a good fit:
 
-Do not use this method for:
+- simple factual lookup
+- straightforward execution tasks
+- requests that need implementation instead of analysis
 
-- straightforward factual lookup
-- simple execution with no real decision
-- tasks where the user wants immediate implementation instead of analysis
-
-## Repository Structure
-
-```text
-.
-├── benefits/
-│   └── SKILL.md
-├── facilitator/
-│   └── SKILL.md
-├── facts/
-│   └── SKILL.md
-├── feelings/
-│   └── SKILL.md
-├── ideas/
-│   └── SKILL.md
-├── perspective/
-│   └── SKILL.md
-└── risks/
-    └── SKILL.md
-```
-
-## Install And Use In Codex
-
-Install a skill from this repository with `npx skills add`:
+## Install
 
 ```bash
 npx skills add https://github.com/jeroengerits/perspectives --skill perspective
 ```
 
-Install any specialist role the same way:
-
-```bash
-npx skills add https://github.com/jeroengerits/perspectives --skill facilitator
-npx skills add https://github.com/jeroengerits/perspectives --skill facts
-npx skills add https://github.com/jeroengerits/perspectives --skill feelings
-npx skills add https://github.com/jeroengerits/perspectives --skill benefits
-npx skills add https://github.com/jeroengerits/perspectives --skill risks
-npx skills add https://github.com/jeroengerits/perspectives --skill ideas
-```
+Install a specialist the same way by replacing `perspective` with `facilitator`, `facts`, `feelings`, `benefits`, `risks`, or `ideas`.
 
 After installing or updating a skill, restart Codex so it reloads the local skill set.
 
-Use the organizer directly in a prompt:
+## Prompts
 
-```text
-Use jeroengerits-perspective to help me decide whether to launch this feature now or delay it by one sprint.
-```
-
-Use a specialist directly when only one lens is needed:
-
-```text
-Use jeroengerits-risks to pressure-test this rollout plan.
-Use jeroengerits-benefits to evaluate the upside of this proposal.
-Use jeroengerits-facts to separate facts, assumptions, and unknowns in this decision.
-```
-
-## Example Use
-
-Example prompt for the organizer:
+Basic organizer prompt:
 
 ```text
 Use jeroengerits-perspective to help me decide whether to launch this feature now or delay it by one sprint. The objective is to improve activation without destabilizing onboarding. Current constraints: 2 engineers, limited analytics confidence, and a fixed release window.
 ```
 
-Prompt for the auto-question and logging workflow:
+Auto-question and logging prompt:
 
 ```text
 Use jeroengerits-perspective to analyze this request. If the brief is unclear, generate exactly one random clarifying question internally. Have that question analyzed by all six skills: jeroengerits-facilitator, jeroengerits-facts, jeroengerits-feelings, jeroengerits-benefits, jeroengerits-risks, and jeroengerits-ideas. Synthesize those six outputs into an Auto Answer with assumptions clearly labeled. Then run the full normalized brief through the same six skills, produce the final decision memo, and append the full run to logs/perspective-runs.md.
@@ -160,4 +70,10 @@ Use jeroengerits-perspective to analyze this request. If the brief is unclear, g
 Request: [replace this with the actual decision or problem]
 ```
 
-If the request is too vague, the organizer should generate one concise random clarifying question internally, run that question through all six supporting skills, and use the synthesized auto-answer to continue the workflow.
+Use a specialist directly when you only want one lens:
+
+```text
+Use jeroengerits-risks to pressure-test this rollout plan.
+Use jeroengerits-benefits to evaluate the upside of this proposal.
+Use jeroengerits-facts to separate facts, assumptions, and unknowns in this decision.
+```
